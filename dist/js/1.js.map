@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/about.js"],"names":[],"mappings":";;;;;;;;AAAA;;AAEA","file":"1.js","sourcesContent":["import app from \"../components/app\";\n\nexport default () => app(\"<h1>About page</h1>\");\n\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/pages/about.js\n// module id = 4\n// module chunks = 1"],"sourceRoot":""}
