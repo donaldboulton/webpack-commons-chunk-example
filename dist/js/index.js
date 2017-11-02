@@ -153,11 +153,11 @@
 /* harmony export (immutable) */ __webpack_exports__["b"] = home;
 /* harmony export (immutable) */ __webpack_exports__["a"] = about;
 function home() {
-  return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 4));
+  return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 2));
 }
 
 function about() {
-  return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 5));
+  return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 3));
 }
 
 
@@ -196,33 +196,6 @@ function route() {
 function render(html) {
   document.getElementById("main").innerHTML = html;
 }
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = (() =>
-  '<img src="http://via.placeholder.com/350x50" width="350" height="50" />');
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__logo__ = __webpack_require__(2);
-
-
-/* harmony default export */ __webpack_exports__["a"] = (body => `
-  ${Object(__WEBPACK_IMPORTED_MODULE_0__logo__["a" /* default */])()}
-  <ul>
-    <li><a href='#/'>Home</a></li>
-    <li><a href='#/about'>About</a></li>
-  </ul>
-  ${body}
-`);
 
 
 /***/ })

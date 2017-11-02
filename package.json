@@ -11,7 +11,7 @@
   "author": "Joaquin Oltra <joaquin@chimeces.com> (http://chimeces.com)",
   "license": "ISC",
   "dependencies": {
-    "webpack": "3.6.0",
+    "webpack": "3.8.1",
     "webpack-bundle-analyzer": "^2.9.0"
   }
 }
