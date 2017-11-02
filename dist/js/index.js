@@ -153,17 +153,25 @@ document.addEventListener("DOMContentLoaded", route);
 
 window.addEventListener("hashchange", route, false);
 
+const home = _ =>
+  __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 3)).then(
+    ({ default: home }) => render(home())
+  );
+
+const about = _ =>
+  __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 4)).then(
+    ({ default: about }) => render(about())
+  );
+
 function route() {
   switch (window.location.hash) {
     case "":
     case "#":
     case "#/":
-      return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 3)).then(({ default: home }) => render(home()));
+      return home();
 
     case "#/about":
-      return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 4)).then(({ default: about }) =>
-        render(about())
-      );
+      return about();
 
     default:
       window.alert("Path not found");
