@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + chunkId + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"pages/home","1":"pages/about"}[chunkId]||chunkId) + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -142,36 +142,51 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["b"] = home;
+/* harmony export (immutable) */ __webpack_exports__["a"] = about;
+function home() {
+  return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 4));
+}
+
+function about() {
+  return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 5));
+}
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules__ = __webpack_require__(0);
+
 
 document.addEventListener("DOMContentLoaded", route);
 
 window.addEventListener("hashchange", route, false);
-
-const home = _ =>
-  __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 3)).then(
-    ({ default: home }) => render(home())
-  );
-
-const about = _ =>
-  __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 4)).then(
-    ({ default: about }) => render(about())
-  );
 
 function route() {
   switch (window.location.hash) {
     case "":
     case "#":
     case "#/":
-      return home();
+      return Object(__WEBPACK_IMPORTED_MODULE_0__modules__["b" /* home */])().then(
+        ({ default: home }) => render(home())
+      );
 
     case "#/about":
-      return about();
+      return Object(__WEBPACK_IMPORTED_MODULE_0__modules__["a" /* about */])().then(
+        ({ default: about }) => render(about())
+      );
 
     default:
       window.alert("Path not found");
@@ -184,7 +199,7 @@ function render(html) {
 
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -193,11 +208,11 @@ function render(html) {
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__logo__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__logo__ = __webpack_require__(2);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (body => `
