@@ -10,6 +10,7 @@ module.exports = {
   output: {
     path: path.resolve("dist", "js"),
     filename: "[name].js",
+    chunkFilename: "[name].js",
     publicPath: "./js/"
   },
   devtool: "source-map",
